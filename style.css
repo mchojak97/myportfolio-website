@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header  header"
+        "main  main   main"
+        "foot   foot    foot";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header {
+    background-color: lightgray;
+    grid-area: header;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    position: fixed;
+}
+
+.navbar {
+    /* display: flex; */
+
+
+}
+
+.navbar ol {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-items: space-between;
+    flex: 1;
+}
+
+.navbar li {
+
+    flex: 1;
+    display: flex;
+
+}
+
+.navbar li>a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+
+}
+
+.main {
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "about1 about2  about3"
+        "skill  skill   skill"
+        "proj  proj   proj"
+        "cont   cont    cont";
+    grid-area: main;
+}
+
+.about {
+    grid-area: about2;
+    width: 500px;
+}
+
+.skills {
+    grid-area: skill;
+}
+
+
+.skills {
+    border: 2px solid red;
+    display: flex;
+    width: 1fr;
+    grid-area: skill;
+    justify-content: space-around;
+}
+
+.skills ol {
+    list-style: none;
+}
+
+.skills * {
+    border: 1px solid green;
+
+}
+
+.projects {
+    grid-area: proj;
+}
+
+.projects * {
+    border: 2px solid blue;
+    padding: 20px 20px;
+}
+
+.contact {
+    display: flex;
+    grid-area: cont;
+    height: 100px;
+    border: 4px solid orange;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer {
+    grid-area: foot;
+}
