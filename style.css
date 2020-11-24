@@ -22,11 +22,6 @@
     position: fixed;
 }
 
-.navbar {
-    /* display: flex; */
-
-
-}
 
 .navbar ol {
     display: flex;
@@ -64,30 +59,51 @@
 
 .about {
     grid-area: about2;
+    color: white;
     width: 500px;
-}
-
-.skills {
-    grid-area: skill;
+    background-color: #3c557c
 }
 
 
 .skills {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    background-color: #263238;
     display: flex;
     width: 1fr;
     grid-area: skill;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.skills h2 {
+    font-size: 40px;
+    width: 100%;
+    margin-top: 100px;
+    color: #ffbf51;
+    display: flex;
+    justify-content: center;
+}
+
 
 .skills ol {
+    margin: 40px 70px 100px 70px;
+    border-left: 5px solid #ffbf51;
+    background-color: #496084;
     list-style: none;
+    color: lightgray;
+    height: 400px;
+    width: 300px;
 }
 
-.skills * {
-    border: 1px solid green;
-
+.skills li span {
+    font-weight: 600;
+    font-size: 24px;
 }
+
+.skills li {
+    padding: 20px 0 0 20px;
+}
+
 
 .projects {
     grid-area: proj;
