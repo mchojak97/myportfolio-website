@@ -1,38 +1,52 @@
+:root {
+    --main-bg-color1: #2b2d2c;
+    --main-bg-color2: #282a29;
+    --icons-color: #ca8d4c;
+}
+
+
 * {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+}
 
+body {
+    background-color: var(--main-bg-color2);
 }
 
 .container {
     display: grid;
     grid-template-areas:
         "header header  header"
-        "main  main   main"
+        "main   main    main"
         "foot   foot    foot";
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .header {
-    background-color: lightgray;
+    color: lightgray;
+    background-color: var(--main-bg-color1);
     grid-area: header;
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 5fr 4fr;
     position: fixed;
+    height: 50px;
+    align-items: center;
 }
 
-
 .navbar ol {
+
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-items: space-between;
+    align-items: center;
     flex: 1;
 }
 
 .navbar li {
-
     flex: 1;
     display: flex;
 
@@ -40,34 +54,111 @@
 
 .navbar li>a {
     text-decoration: none;
-    color: black;
-    font-size: 30px;
+    color: lightgray;
+    font-weight: 600;
+    font-size: 25px;
+    /* font-weight: 700; */
 
 }
 
 .main {
     margin-top: 2vw;
     display: grid;
+    color: lightgray;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-        "about1 about2  about3"
-        "skill  skill   skill"
-        "proj  proj   proj"
-        "cont   cont    cont";
+        "home      home       home "
+        "skill     skill      skill"
+        "about     about      about"
+        "proj      proj       proj"
+        "contact   contact    contact";
     grid-area: main;
 }
 
-.about {
-    grid-area: about2;
-    color: white;
-    width: 500px;
-    background-color: #3c557c
+
+
+.home {
+    grid-area: home;
+    z-index: -1;
+    background-color: var(--main-bg-color2);
+    font-size: 25px;
+    height: 96vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    border: 1px red solid;
+
 }
+
+
+.leftside {
+    border: 1px red solid;
+    align-self: center;
+    justify-self: end;
+
+}
+
+.button-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 200px;
+    align-self: center;
+    flex-direction: column;
+}
+
+
+
+.home h1 {
+    display: flex;
+    justify-content: center;
+    width: 1fr;
+    border: 1px red solid;
+    flex: 1;
+}
+
+.home p {
+    width: 1fr;
+    flex: 1;
+}
+
+.home .cv {
+    display: flex;
+    height: 50px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    border: 4px var(--icons-color) solid;
+    background-color: var(--main-bg-color1);
+}
+
+.button-box a {
+    color: var(--icons-color);
+    text-decoration: none;
+}
+
+
+.rightside {
+    /* border: 1px red solid; */
+    align-self: end;
+}
+
+
+.home .cat {
+    width: 800px;
+    height: 800px;
+    align-items: end;
+    /* border: 1px red solid; */
+    position: relative;
+
+    transform: translateX(100px);
+}
+
 
 
 .skills {
     /* border: 2px solid red; */
-    background-color: #263238;
+    background-color: var(--main-bg-color1);
     display: flex;
     width: 1fr;
     grid-area: skill;
@@ -75,20 +166,42 @@
     flex-wrap: wrap;
 }
 
-.skills h2 {
-    font-size: 40px;
-    width: 100%;
-    margin-top: 100px;
-    color: #ffbf51;
+.skills .skill-box {
     display: flex;
-    justify-content: center;
+    width: 70vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+.skills h2 {
+    border: 1px red solid;
+    font-size: 20px;
+    width: 100vw;
+    margin-top: 40px;
+    color: lightgray;
+    display: flex;
+    justify-content: start;
+}
+
+.skills h2 div {
+    height: 4px;
+    width: 40px;
+    margin-right: 10px;
+    background-color: var(--icons-color);
+    align-self: center;
+}
+
+.skills .what {
+    width: 100vw;
+    font-size: 35px;
+    font-weight: 600;
+}
 
 .skills ol {
-    margin: 40px 70px 100px 70px;
-    border-left: 5px solid #ffbf51;
-    background-color: #496084;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    border-left: 5px solid var(--icons-color);
+    background-color: var(--main-bg-color2);
     list-style: none;
     color: lightgray;
     height: 400px;
@@ -96,34 +209,94 @@
 }
 
 .skills li span {
-    font-weight: 600;
-    font-size: 24px;
+    color: var(--icons-color);
+    font-weight: 700;
+    font-size: 28px;
 }
 
 .skills li {
     padding: 20px 0 0 20px;
+    font-size: 20px;
 }
 
 
+
+.about {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    grid-area: about;
+    color: lightgray;
+    background-color: var(--main-bg-color2);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about h2 div {
+    height: 4px;
+    width: 40px;
+    margin-right: 10px;
+    background-color: var(--icons-color);
+    align-self: center;
+}
+
+.about h2 {
+    border: 1px red solid;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: start;
+}
+
+.about .who {
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+
+.about-box {
+    width: 70vw;
+    border: 1px red solid;
+    display: flex;
+    justify-content: justify;
+    align-content: center;
+}
+
+.note-about {
+    margin-top: 30px;
+    width: 500px;
+    flex: 1;
+    /* border:1px red solid; */
+}
+
+.mypic {
+    flex: 1;
+    margin-right: 50px;
+    /* border:1px red solid; */
+}
+
 .projects {
+    background-color: var(--main-bg-color1);
     grid-area: proj;
 }
 
 .projects * {
-    border: 2px solid blue;
+    border: 2px solid var(--icons-color);
     padding: 20px 20px;
 }
 
 .contact {
     display: flex;
-    grid-area: cont;
+    grid-area: contact;
     height: 100px;
-    border: 4px solid orange;
+    border: 4px solid var(--icons-color);
     justify-content: center;
     align-items: center;
-
 }
 
 .footer {
+    background-color: var(--main-bg-color1);
     grid-area: foot;
 }
