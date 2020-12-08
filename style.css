@@ -112,7 +112,7 @@ body {
 .button-box {
     /* display: flex; */
     /* justify-self: end; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* align-self: center; */
     /* border: 1px blue solid; */
     /* justify-self: center; */
@@ -127,7 +127,7 @@ body {
 
 .home .hello {
     /* display: flex; */
-    
+
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -153,10 +153,25 @@ body {
     border: 4px var(--icons-color) solid;
     background-color: var(--main-bg-lighter);
     box-sizing: border-box;
+    transition: all 0.4s ease-out;
+}
+
+.home .cv:hover {
+
+    display: flex;
+    height: 50px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    border: 4px var(--icons-color) solid;
+    background-color: var(--icons-color);
+    color: var(--main-bg-darker);
+    font-weight: 600;
+    box-sizing: border-box;
 }
 
 .home .cv-box {
-    
+
     margin-top: 20px;
     display: flex;
     height: 50px;
@@ -164,6 +179,8 @@ body {
     justify-items: center;
     align-items: center;
 }
+
+
 
 
 .button-box a {
@@ -197,7 +214,7 @@ body {
 .skills {
     /* border: 2px solid red; */
     background-color: var(--main-bg-darker);
-    margin-top: 20px;
+    margin-top: 70px;
     display: flex;
     width: 1fr;
     grid-area: skill;
@@ -212,15 +229,6 @@ body {
     flex-wrap: wrap;
 }
 
-.skills h2 {
-    /* border: 1px red solid; */
-    font-size: 20px;
-    width: 100vw;
-    margin-top: 40px;
-    color: lightgray;
-    display: flex;
-    justify-content: start;
-}
 
 .line {
     height: 4px;
@@ -277,7 +285,7 @@ body {
 
 
 
-.about h2 {
+h2 {
     /* border: 1px red solid; */
     font-size: 20px;
     font-weight: 600;
@@ -288,7 +296,7 @@ body {
 .semi-title {
     font-size: 35px;
     font-weight: 600;
-
+    margin-bottom: 30px;
 }
 
 
@@ -343,6 +351,7 @@ body {
     background-color: var(--main-bg-boxes);
     /* border: 2px red solid; */
     padding: 50px;
+
     display: flex;
 }
 
@@ -352,26 +361,17 @@ body {
     /* border:1px red solid; */
 }
 
-.note-proj1 .semi-title {
-    margin-bottom: 30px;
-}
 
-.project1 img {
+.projects img {
     height: 300px;
 }
 
-.project1 h2 {
-    /* border: 1px red solid; */
-    font-size: 20px;
-    font-weight: 600;
-    display: flex;
-    justify-content: start;
-}
 
 
 .project2 {
     background-color: var(--main-bg-boxes);
     margin-top: 70px;
+    margin-bottom: 70px;
     /* border: 2px red solid; */
     padding: 50px;
     display: flex;
@@ -383,67 +383,55 @@ body {
     /* border:1px red solid; */
 }
 
-.note-proj2 .semi-title {
-    margin-bottom: 30px;
-}
 
-.project2 img {
-    height: 300px;
-}
-
-.project2 h2 {
-    /* border: 1px red solid; */
-    font-size: 20px;
-    font-weight: 600;
-    display: flex;
-    justify-content: start;
-}
-
-
-
-
-.project3 {
-    background-color: var(--main-bg-boxes);
-    margin-top: 70px;
-    /* border: 2px red solid; */
-    padding: 50px;
-    display: flex;
-}
-
-.note-proj3 {
-    margin-right: 50px;
-    flex: 1;
-    /* border:1px red solid; */
-}
-
-.note-proj3 .semi-title {
-    margin-bottom: 30px;
-}
-
-.project3 img {
-    height: 300px;
-}
-
-.project3 h2 {
-    /* border: 1px red solid; */
-    font-size: 20px;
-    font-weight: 600;
-    display: flex;
-    justify-content: start;
-}
 
 
 .contact {
     background-color: var(--main-bg-lighter);
     display: flex;
     grid-area: contact;
-    height: 100px;
-    border: 4px solid var(--icons-color);
+    
+    /* border: 4px solid var(--icons-color); */
     justify-content: center;
     align-items: center;
 }
 
+
+.contact .contact-box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70vw;
+    border: 2px red solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.contact .note-contact{
+    margin: 0 50px 0 30px;
+    flex: 1;
+}
+
+.form-box {
+    
+    background-color: green;
+    height: 250px;
+    width: 500px;
+    margin: 0 50px 0 30px;
+    display: flex;
+    
+}
+
 .footer {
-    background-color: var(--main-bg-darker);
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: var(--main-bg-darker);
+    background-color: var(--icons-color);
     grid-area: foot;
 }
