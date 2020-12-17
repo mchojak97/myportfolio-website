@@ -41,6 +41,7 @@ body {
     height: 50px;
     align-items: center;
     z-index: 1;
+    
 }
 
 .navbar ol {
@@ -54,10 +55,24 @@ body {
 }
 
 .navbar li {
+    /* border: 1px red solid; */
     flex: 1;
+    position: relative;
     display: flex;
+    justify-content: center;
+}
+
+.navbar li :hover {
+    /* border: 1px red solid; */
+    color: var(--icons-color);
+    font-size: 27px;
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
 
 }
+
 
 .navbar li>a {
     text-decoration: none;
@@ -67,6 +82,7 @@ body {
     /* font-weight: 700; */
 
 }
+
 
 .main {
     margin-top: 2vw;
