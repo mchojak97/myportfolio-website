@@ -5,6 +5,9 @@
     --icons-color: #ca8d4c;
 }
 
+html {
+    font-size: 1.7vh;
+}
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -17,6 +20,7 @@
 
 body {
     background-color: var(--main-bg-darker);
+    font-size: 1.7vh;
 
 }
 
@@ -34,11 +38,11 @@ body {
     color: lightgray;
     background-color: var(--main-bg-darker);
     grid-area: header;
-    width: 100%;
+    width: 100vw;
     display: grid;
     grid-template-columns: 5fr 4fr;
     position: fixed;
-    height: 50px;
+    height: 5vh;
     align-items: center;
     z-index: 1;
 
@@ -52,10 +56,13 @@ body {
     justify-items: space-between;
     align-items: center;
     flex: 1;
+    margin-right: 2.1rem;
+    /* border: solid; */
 }
 
 .navbar li {
     /* border: 1px red solid; */
+    font-size: 1.5rem;
     flex: 1;
     position: relative;
     display: flex;
@@ -65,7 +72,7 @@ body {
 .navbar li :hover {
     /* border: 1px red solid; */
     color: var(--icons-color);
-    font-size: 27px;
+    font-size: 1.15em;
     flex: 1;
     position: relative;
     display: flex;
@@ -78,14 +85,15 @@ body {
     text-decoration: none;
     color: lightgray;
     font-weight: 600;
-    font-size: 25px;
+    /* font-size: 1em; */
     /* font-weight: 700; */
 
 }
 
 
 .main {
-    margin-top: 2vw;
+    /* margin-top: 2vh; */
+    /* border: 2px red solid; */
     display: grid;
     color: lightgray;
     grid-template-columns: 1fr 1fr 1fr;
@@ -104,19 +112,20 @@ body {
     grid-area: home;
     /* z-index: -1; */
     background-color: var(--main-bg-lighter);
-    font-size: 25px;
-    height: 96vh;
+    font-size: 1.5rem;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    /* border: 1px yellow solid; */
+    border: 1px yellow solid;
 
 }
 
 
 .leftside {
-    /* border: 1px green solid; */
-    /* width: 100%; */
+    margin-left: 10vw;
+    border: 1px green solid;
+    width: 40vw;
     /* height: 100%; */
     align-items: center;
     justify-self: end;
@@ -126,15 +135,18 @@ body {
 
 
 .button-box {
+    /* height: 30%; */
+    /* width: 100%; */
     /* display: flex; */
     /* justify-self: end; */
     /* flex-wrap: wrap; */
     /* align-self: center; */
-    /* border: 1px blue solid; */
+    border: 1px blue solid;
     /* justify-self: center; */
     /* flex-wrap: wrap; */
     /* flex: 1; */
     /* flex-direction: column; */
+    font-size: 100%;
 }
 
 .hello span {
@@ -145,7 +157,7 @@ body {
     /* display: flex; */
 
     font-weight: 600;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .button-box h2 {
@@ -153,7 +165,7 @@ body {
     font-weight: 700;
     /* flex:1; */
 
-    font-size: 100px;
+    font-size: 5.5rem;
     /* border: 1px red solid; */
 }
 
@@ -162,21 +174,23 @@ body {
 .home .cv {
 
     display: flex;
-    height: 50px;
-    width: 250px;
+    font-size: 1em;
+    height: 5vh;
+    width: 13vw;
     justify-content: center;
     align-items: center;
     border: 4px var(--icons-color) solid;
     background-color: var(--main-bg-lighter);
     box-sizing: border-box;
     transition: all 0.4s ease-out;
+    /* border: 1px red solid; */
 }
 
 .home .cv:hover {
 
     display: flex;
-    height: 50px;
-    width: 250px;
+    height: 5vh;
+    width: 13vw;
     justify-content: center;
     align-items: center;
     border: 4px var(--icons-color) solid;
@@ -187,11 +201,11 @@ body {
 }
 
 .home .cv-box {
-
-    margin-top: 20px;
+    /* border: 1px red solid; */
+    margin-top: 1vh;
     display: flex;
-    height: 50px;
-    width: 250px;
+    height: 100%;
+    width: 100%;
     justify-items: center;
     align-items: center;
 }
@@ -216,13 +230,13 @@ body {
 
 
 .home .cat {
-    width: 800px;
-    height: 800px;
+    width: 80vh;
+    height: 80vh;
     align-items: end;
     /* border: 1px red solid; */
     position: relative;
 
-    transform: translateX(100px);
+    transform: translateX(10%);
 }
 
 
@@ -230,95 +244,99 @@ body {
 .skills {
     /* border: 2px solid red; */
     background-color: var(--main-bg-darker);
-    margin-top: 70px;
+    /* padding-top: 7%; */
     display: flex;
-    width: 1fr;
+    width: 100%;
     grid-area: skill;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .skills .skill-box {
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: flex;
-    width: 70vw;
+    width: 75%;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 
 .line {
-    height: 4px;
-    width: 40px;
-    margin-right: 10px;
+    height: 0.3rem;
+    width: 2.85rem;
+    margin-right: 0.3rem;
     background-color: var(--icons-color);
     align-self: center;
 }
 
 .skills .what {
     width: 100vw;
-    font-size: 35px;
+    font-size: 2.1rem;
     font-weight: 600;
 }
 
 .skills ol {
-    margin-top: 40px;
-    margin-bottom: 100px;
+    margin-top: 15%;
     border-left: 5px solid var(--icons-color);
     background-color: var(--main-bg-boxes);
     list-style: none;
     color: lightgray;
-    height: 400px;
-    width: 300px;
+    height: 42vh;
+    width: 16vw;
+}
+
+
+
+.skills li {
+    padding-top: 5%;
+    padding-left: 5%;
+    font-size: 1.35rem;
 }
 
 .skills li span {
     color: var(--icons-color);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.4em;
 }
 
-.skills li {
-    padding: 20px 0 0 20px;
-    font-size: 20px;
-}
-
-.skills img {
-    height: 25px;
-}
 
 
 .about {
     display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
     width: 100%;
     grid-area: about;
     color: lightgray;
     background-color: var(--main-bg-lighter);
     flex-wrap: wrap;
     justify-content: center;
+    border: solid;
 }
 
 
-
+/* TO SĄ WSZYSTKIE NAGŁÓWSKI TYPU ---ABOUMT ME  */
 h2 {
     /* border: 1px red solid; */
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 600;
     display: flex;
     justify-content: start;
 }
 
+/* TO SĄ WSZYSTKIE ZAPYTANIA TYPU ---Who Am I  */
 .semi-title {
-    font-size: 35px;
+    font-size: 2.1rem;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 1.2rem;
 }
 
 
 .about-box {
-    width: 70vw;
-    /* border: 1px green solid; */
+    margin-top: 7%;
+    margin-bottom: 7%;
+    width: 70%;
+    /* height: 100%; */
+    border: 1px green solid;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
@@ -327,26 +345,24 @@ h2 {
 .about-box img {
 
     /* border: 2px red solid; */
-    height: 400px;
-    width: 400px;
+    height: 45vh;
+    width: 45vh;
     flex: 1;
 }
 
 .note-about {
-    margin-top: 30px;
+    margin-top: 2vh;
     flex: 1;
     /* border:1px red solid; */
 }
 
 .mypic {
     flex: 1;
-    margin-right: 50px;
+    margin-right: 3rem;
     /* border:1px red solid; */
 }
 
 .projects {
-    margin-top: 100px;
-    margin-bottom: 100px;
     background-color: var(--main-bg-darker);
     grid-area: proj;
     width: 100%;
@@ -359,42 +375,60 @@ h2 {
 
 
 .projects .proj-box {
-    width: 70vw;
-    /* border: 2px blue solid; */
+    width: 70%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    border: 2px blue solid;
 }
 
-.project1 {
+.project13 {
     background-color: var(--main-bg-boxes);
+    /* margin-top: 6%;
+    margin-bottom: 6%; */
     /* border: 2px red solid; */
-    padding: 50px;
-
+    padding: 3vw;
     display: flex;
 }
 
-.note-proj1 {
-    margin-right: 50px;
+.note-proj13 {
+    /* display: flex; */
+    /* font-size: 0.5em; */
+    margin-right: 3vw;
     flex: 1;
-    /* border:1px red solid; */
+    border: 1px red solid;
+    /* width: 30%; */
 }
 
+.proj13-box {
+    /* display: flex; */
+    flex: 1;
+}
 
 .projects img {
-    height: 300px;
+    display: flex;
+    /* border: solid; */
+    width: 100%;
+    flex: 1;
 }
 
 
 
 .project2 {
     background-color: var(--main-bg-boxes);
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 6%;
+    margin-bottom: 6%;
     /* border: 2px red solid; */
-    padding: 50px;
+    padding: 3vw;
     display: flex;
 }
 
+.proj2-box {
+    /* display: flex; */
+    flex: 1;
+}
+
 .note-proj2 {
-    margin-left: 50px;
+    margin-left: 3vw;
     flex: 1;
     /* border:1px red solid; */
 }
@@ -414,9 +448,9 @@ h2 {
 
 
 .contact .contact-box {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 70vw;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 70%;
     /* border: 2px red solid; */
     display: flex;
     flex-wrap: wrap;
@@ -425,17 +459,18 @@ h2 {
 
 
 .contact .note-contact {
-    margin: 0 50px 0 30px;
+    margin-right: 4vw;
     flex: 1;
 }
 
 .form-box {
-    padding: 30px;
+    padding: 1.5vw;
     background-color: var(--main-bg-darker);
-    border-left: 5px var(--icons-color) solid;
-    height: 360px;
-    width: 500px;
-    margin: 0 50px 0 30px;
+    border-left: 0.3vw var(--icons-color) solid;
+    height: 37vh;
+    width: 25vw;
+    margin-right: 3vw;
+    /* margin-left: 30px; */
     display: flex;
     justify-content: center;
 
@@ -445,27 +480,27 @@ h2 {
 
 
 .email-box {
-    padding: 10px;
+    padding: 1.5vh;
     color: lightgray;
-    border: 0px var(--icons-color) solid;
-    font-size: 18px;
+    border: none;
+    font-size: 1.1rem;
     font-weight: 700;
-    height: 40px;
-    width: 400px;
+    height: 2vh;
+    width: 20vw;
     background-color: var(--main-bg-boxes);
 }
 
 
 .msg-box {
     resize: none;
-    margin-top: 20px;
-    border: 0px var(--icons-color) solid;
-    padding: 10px;
+    margin-top: 1.5vh;
+    border: none;
+    padding: 1.5vh;
     color: lightgray;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 700;
-    height: 180px;
-    width: 400px;
+    height: 20vh;
+    width: 20vw;
     background-color: var(--main-bg-boxes);
 }
 
@@ -475,33 +510,33 @@ h2 {
 }
 
 .send-box {
-    margin-top: 20px;
+    margin-top: 2vh;
     border: 3px var(--icons-color) solid;
     color: lightgray;
-    font-size: 18px;
+    font-size: 1.4rem;
     font-weight: 600;
-    height: 45px;
-    width: 200px;
+    height: 5vh;
+    width: 10vw;
     background-color: var(--main-bg-boxes);
 }
 
 .send-box:hover {
-    margin-top: 20px;
+    margin-top: 2vh;
     border: 3px var(--icons-color) solid;
     color: var(--main-bg-darker);
-    font-size: 18px;
+    font-size: 1.4rem;
     font-weight: 700;
-    height: 45px;
-    width: 200px;
+    height: 5vh;
+    width: 10vw;
     background-color: var(--icons-color);
     transition: all 0.3s ease-out;
 }
 
 .footer {
     font-weight: 400;
-    font-size: 18px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 1.2rem;
+    padding-top: 0.9vh;
+    padding-bottom: 0.9vh;
     display: flex;
     align-content: center;
     justify-content: center;
