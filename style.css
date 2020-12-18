@@ -1,5 +1,5 @@
 :root {
-    --main-bg-lighter: #2b2d2c;
+    --main-bg-lighter: #2c2e2d;
     --main-bg-darker: #282a29;
     --main-bg-boxes: #2d302e;
     --icons-color: #ca8d4c;
@@ -41,7 +41,7 @@ body {
     height: 50px;
     align-items: center;
     z-index: 1;
-    
+
 }
 
 .navbar ol {
@@ -447,7 +447,7 @@ h2 {
 .email-box {
     padding: 10px;
     color: lightgray;
-    border: 1px var(--icons-color) solid;
+    border: 0px var(--icons-color) solid;
     font-size: 18px;
     font-weight: 700;
     height: 40px;
@@ -459,7 +459,7 @@ h2 {
 .msg-box {
     resize: none;
     margin-top: 20px;
-    border: 1px var(--icons-color) solid;
+    border: 0px var(--icons-color) solid;
     padding: 10px;
     color: lightgray;
     font-size: 18px;
