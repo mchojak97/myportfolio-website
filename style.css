@@ -9,12 +9,12 @@ html {
     font-size: 0.87vw;
 }
 
+p {
+    font-size: max(1rem, 12px);
+    text-align: justify;
+}
 
-@media screen and (max-width: 1200px) {
-    html {
-       /* font-size: 1.2vw;     */
-    }
-    }
+
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -58,15 +58,7 @@ body {
 
 }
 
-@media screen and (max-width: 1200px) {
-.header {
-    font-size: 3rem;
-    height: 3vh;
-    grid-template-columns: 1fr;
-    align-content: center;
-    
-}
-}
+
 
 .navbar ol {
     display: flex;
@@ -138,49 +130,20 @@ body {
     height: 50vw;
     max-height: 100vh;
     /* width: 100vw; */
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     display: flex;
     /* align-content: end; */
     /* border: 1px yellow solid; */
 
 }
 
-@media screen and (max-width: 1200px) {
-    .home {
-        height: 100vh;
-        width: 100vw;
-        grid-template-columns: 1fr;
-        display: grid;
-       
-
-    }
-    .leftside {
-        display: flex;
-        height: 100vh;
-        width: 400px;
-        
-        font-size: 5rem;
-    }
-
-    .hello span {
-        /* width: 100vw; */
-        color: #ca8d4c;
-        font-size: 12rem;
-    }
-    .rightside {
-       visibility: hidden;
-       display: none;
-    }
-    
-}
 
 
 .leftside {
-    margin-left: 10vw;
+    margin-left: 10%;
     height: 100%;
     /* border: 1px green solid; */
     width: 40%;
-    /* height: 100%; */
     align-items: center;
     justify-self: end;
     display: flex;
@@ -188,10 +151,11 @@ body {
 }
 
 
-.button-box {
+.buttons {
     /* height: 30%; */
     /* width: 100%; */
     /* display: flex; */
+    /* justify-content: space-between; */
     /* justify-self: end; */
     /* flex-wrap: wrap; */
     /* align-self: center; */
@@ -214,18 +178,18 @@ body {
     /* margin-bottom: 10px; */
 }
 
-.button-box h2 {
+.helloworld-box h2 {
     /* display: flex; */
     font-weight: 700;
     /* flex:1; */
 
-    font-size: 5.5rem;
+    font-size: 5.2rem;
     /* border: 1px red solid; */
 }
 
 
 
-.home .cv {
+.home .in-butt {
 
     display: flex;
     font-size: 1em;
@@ -240,7 +204,7 @@ body {
     /* border: 1px red solid; */
 }
 
-.home .cv:hover {
+.home .in-butt:hover {
 
     display: flex;
     font-size: 1em;
@@ -255,7 +219,7 @@ body {
     box-sizing: border-box;
 }
 
-.home .cv-box {
+.home .butt {
     /* border: 1px red solid; */
     margin-top: 1vh;
     display: flex;
@@ -268,7 +232,7 @@ body {
 
 
 
-.button-box a {
+.helloworld-box a {
     /* border: 1px red solid; */
     color: var(--icons-color);
     text-decoration: none;
@@ -279,7 +243,7 @@ body {
 
 .rightside {
     display: flex;
-    
+
     /* border: 2px red solid; */
     width: 50%;
     /* height: 100vh; */
@@ -297,8 +261,8 @@ body {
 .rightside img {
     /* display: block; */
     /* flex: 1; */
-    /* width: 80%; */
-    height: 50rem;
+    width: 80%;
+    /* height: 50rem; */
     /* align-self: end; */
     /* border: 2px green solid; */
     /* position: relative; */
@@ -339,7 +303,7 @@ body {
 }
 
 .skills .what {
-    width: 100vw;
+    width: 80vw;
     font-size: 2.1rem;
     font-weight: 600;
 }
@@ -387,6 +351,7 @@ body {
 /* TO SĄ WSZYSTKIE NAGŁÓWSKI TYPU ---ABOUMT ME  */
 h2 {
     /* border: 1px red solid; */
+
     font-size: 1.2em;
     font-weight: 600;
     display: flex;
@@ -421,6 +386,7 @@ h2 {
 }
 
 .note-about {
+    font-size: max(1rem, 12px);
     margin-top: 1vw;
     flex: 1;
     /* border:1px red solid; */
@@ -463,6 +429,7 @@ h2 {
 .note-proj13 {
     /* display: flex; */
     /* font-size: 0.5em; */
+    font-size: max(1rem, 12px);
     margin-right: 3vw;
     flex: 1;
     /* border: 1px red solid; */
@@ -498,6 +465,7 @@ h2 {
 }
 
 .note-proj2 {
+    font-size: max(1rem, 12px);
     margin-left: 3vw;
     flex: 1;
     /* border:1px red solid; */
@@ -615,4 +583,250 @@ h2 {
     color: var(--main-bg-darker);
     background-color: var(--icons-color);
     grid-area: foot;
+}
+
+.footer h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+
+/* WERSJA MOBLINA */
+
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 1vw;
+    }
+}
+
+
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 2vw;
+    }
+
+    .nav-contact {
+        margin: 0;
+        /* border: 1px solid red; */
+
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        /* border: 1px yellow solid; */
+        margin: 0;
+    }
+
+    .header {
+        border: 1px solid red;
+        margin: 0;
+        /* font-size: 3rem; */
+        height: 5vw;
+        grid-template-columns: 1fr;
+        align-content: center;
+
+    }
+
+    .home {
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        /* grid-template-columns: 1fr; */
+        display: flex;
+        /* border: 1px solid green; */
+
+    }
+
+    .leftside {
+        margin-left: 0;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .hello span {
+        /* width: 100vw; */
+        color: #ca8d4c;
+        /* font-size: 3rem; */
+    }
+
+    .rightside {
+        margin: 0;
+
+        display: none;
+    }
+
+
+
+    .home .in-butt {
+        font-size: 1em;
+        height: 10vw;
+        width: 80vw;
+        border: 0.8vw var(--icons-color) solid;
+    }
+
+    .home .in-butt:hover {
+        font-size: 1em;
+        height: 10vw;
+        width: 80vw;
+        border: 0.8vw var(--icons-color) solid;
+    }
+
+
+
+    .helloworld-box h2 {
+        font-size: 5.5rem;
+        /* border: 1px red solid; */
+    }
+
+
+    .skills .skill-box {
+        margin-left: 15vw;
+        margin-top: 6vw;
+        margin-bottom: 7vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+        /* box-sizing: border-box; */
+        /* flex-wrap: wrap; */
+        /* border: 1px red solid; */
+    }
+
+    h2 {
+        /* border: 1px red solid; */
+        /* width: 80vw; */
+        margin-left: 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+        /* border: 1px red solid; */
+        /* justify-self: start; */
+        align-self: start;
+    }
+
+    .skills ol {
+        margin-top: 6vw;
+        width: 70vw;
+        /* justify-self: center; */
+        /* border-left: 0.4rem solid var(--icons-color); */
+        /* background-color: var(--main-bg-boxes); */
+        /* list-style: none; */
+        /* color: lightgray; */
+        height: 25rem;
+        /* min-width: 20em; */
+
+        /* width: 16vw; */
+    }
+
+    .skills li {
+        font-size: 1.8rem;
+    }
+
+
+
+    .about {
+        flex-direction: column;
+        /* border: 1px green solid; */
+    }
+
+    .about-box {
+        justify-items: start;
+        margin-left: 15vw;
+    }
+
+    .about-box img {
+        display: none;
+
+    }
+
+    .projects .proj-box {
+        /* width: 80%; */
+
+        /* border: 2px blue solid; */
+    }
+
+    .project13 {
+        /* margin: 0; */
+        /* padding: 0; */
+        /* width: 100%; */
+        flex-direction: column;
+        /* border: 1px green solid; */
+    }
+
+    .note-proj13 {
+        margin: 0;
+    }
+
+
+    .project2 {
+
+        /* margin: 0; */
+        /* padding: 0; */
+        /* width: 100%; */
+        flex-direction: column-reverse;
+        /* border: 1px green solid; */
+    }
+
+
+    .note-proj2 {
+        margin: 0;
+    }
+
+    .projects p {
+        margin-bottom: 4vw;
+    }
+
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .form-box {
+        border-left: 0.7vw var(--icons-color) solid;
+        margin-top: 3vw;
+        width: 70vw;
+        height: 71vw;
+    }
+
+    .send-box {
+        margin-top: 2vw;
+        height: 5vw;
+        width: 25vw;
+        border: 0.6vw var(--icons-color) solid;
+    }
+
+    .send-box:hover {
+        margin-top: 2vw;
+        height: 5vw;
+        width: 25vw;
+        border: 0.6vw var(--icons-color) solid;
+    }
+
+
+
+
+    .email-box {
+        height: 5vw;
+        width: 60vw;
+    }
+
+    .msg-box {
+        margin-top: 2.5vw;
+        height: 50vw;
+        width: 60vw;
+    }
+
+
+    .footer h3 {
+        font-size: 2rem;
+    }
+
 }
