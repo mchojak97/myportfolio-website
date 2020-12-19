@@ -46,7 +46,16 @@ body {
     height: 2.5vw;
     align-items: center;
     z-index: 1;
+    /* border: 1px red solid; */
 
+}
+
+@media screen and (max-width: 1200px){
+    .header {
+    
+    grid-template-columns: 1fr;
+    
+}
 }
 
 .navbar ol {
@@ -65,7 +74,7 @@ body {
     /* border: 1px red solid; */
     font-size: 1.5rem;
     flex: 1;
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
 }
@@ -75,7 +84,7 @@ body {
     color: var(--icons-color);
     font-size: 1.15em;
     flex: 1;
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
 
@@ -120,9 +129,9 @@ body {
     height: 50vw;
     max-height: 100vh;
     /* width: 100vw; */
-    display: grid;
     grid-template-columns: 1fr 1fr;
     display: flex;
+    /* align-content: end; */
     /* border: 1px yellow solid; */
 
 }
@@ -130,6 +139,7 @@ body {
 
 .leftside {
     margin-left: 10vw;
+    height: 100%;
     /* border: 1px green solid; */
     width: 40%;
     /* height: 100%; */
@@ -230,24 +240,38 @@ body {
 
 
 .rightside {
-    /* display: flex; */
-    /* border: 1px red solid; */
+    display: flex;
+    
+    /* border: 2px red solid; */
     width: 50%;
-    /* height: 80%; */
+    /* height: 100vh; */
 
-    align-self: end;
+    align-items: flex-end;
 }
 
+.cat {
+    height: 50rem;
+    display: flex;
+    /* border: 1px blue solid; */
+    /* align-self: end;  */
+    /* flex: 1; */
+}
+/* 
+.ss {
+    border: solid;
+    display: flex;
+} */
 
 .rightside img {
-    /* display: flex; */
-    width: 80%;
-    /* height: 40rem; */
-    align-items: end;
-    /* border: 1px red solid; */
-    position: relative;
+    /* display: block; */
+    /* flex: 1; */
+    /* width: 80%; */
+    height: 50rem;
+    /* align-self: end; */
+    /* border: 2px green solid; */
+    /* position: relative; */
 
-    transform: translateX(10%);
+    /* transform: translateX(10%); */
 }
 
 
