@@ -570,7 +570,7 @@ h2 {
 }
 
 .send-box {
-    margin-top: 1vw;
+    margin-top: 2vw;
     border: 0.25vw var(--icons-color) solid;
     color: lightgray;
     font-size: 1.4rem;
@@ -578,10 +578,11 @@ h2 {
     height: 2.5vw;
     width: 10vw;
     background-color: var(--main-bg-boxes);
+    
 }
 
 .send-box:hover {
-    margin-top: 2vh;
+    margin-top: 2vw;
     border: 0.25vw var(--icons-color) solid;
     color: var(--main-bg-darker);
     font-size: 1.4rem;
