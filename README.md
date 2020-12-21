@@ -14,9 +14,11 @@ It is my first project, which I made as a part of CodersCamp Course. With this w
 
 ## Screenshots
 * Desktop Version
+
 ![Desktop Version](./img/scr1.jpg)
 
 * Mobile Version
+
 ![Moblie Version](./img/scr2.jpg)
 
 ## Technologies
@@ -28,7 +30,7 @@ If you want to see my page, you can do it on your local computer(download this r
 
 
 ## Status
-Project is _finished_.
+Project is _in progress_.
 
 ## Contact
 Created by [@Maciej Chojak](https://mchojak97.github.io/myportfolio-website/) - feel free to contact me!
