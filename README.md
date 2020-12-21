@@ -14,10 +14,10 @@ It is my first project, which I made as a part of CodersCamp Course. With this w
 
 ## Screenshots
 * Desktop Version
-![Desktop Version](img/s2.png)
+![Desktop Version](./img/s2.png)
 
 * Mobile Version
-![Moblie Version](img/p1.jpg)
+![Moblie Version](./img/s1.jpg)
 
 ## Technologies
 * HTML5
