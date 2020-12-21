@@ -10,10 +10,14 @@
 * [Contact](#contact)
 
 ## General info
-It is my first project which I made as a part of CodersCamp Course. That project was supposed to introduce me to HTML and CSS. Mainly, I used flexbox and grid to make this website. 
+It is my first project, which I made as a part of CodersCamp Course. With this website I wanted to learn HTML and CSS. Mainly, I used flexbox and grid to make this website. 
 
 ## Screenshots
-aaa
+* Desktop Version
+![Desktop Version](img/s2.png)
+
+* Mobile Version
+![Moblie Version](img/p1.jpg)
 
 ## Technologies
 * HTML5
