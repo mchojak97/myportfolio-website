@@ -323,8 +323,7 @@ h2 {
 }
 
 .about-box img {
-    height: 25em;
-    width: 25em;
+    height: 20em;
     flex: 1;
 }
 
@@ -346,10 +345,13 @@ h2 {
     display: flex;
     justify-content: center;
 }
-
+.proj-buttonts {
+    margin: 3vmin 0;
+    display: flex;
+    justify-content: space-between;
+}
 .live-button{
     cursor: pointer;
-    margin: 2vmin;
     border: 0.25vw var(--icons-color) solid;
     color: lightgray;
     font-size: 1.4rem;
@@ -643,7 +645,7 @@ h2 {
     .skills ol {
         margin-top: 6vw;
         width: 70vw;
-        height: 50vh;
+        height: 60vh;
     }
 
     .skills li {
