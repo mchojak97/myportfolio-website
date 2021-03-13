@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Moja pierwsza strona internetowa i moje portfolio">
-    <!-- Tu jeszcze coś zmienić  -->
+    <meta name="description" content="My portfolio web">
     <meta name="keywords" content="Business Card, Portfolio, About me, my project, HTML">
-    <!-- Tu jeszcze coś zmienić  -->
     <meta name="author" content="Maciej Chojak">
     <title>Business Card - Maciej Chojak</title>
     <link rel="icon" type="image/png" href="img/icon.png" />
@@ -57,18 +55,18 @@
                         <h3 class='hello'><span>Hello World</span>&nbspMy Name Is</h3>
                         <h2>Maciej Chojak</h2>
                         <div class="buttons">
-                            <div class="butt">
+                            <!-- Add when ready <div class="butt">
                                 <a href="#">
-                                    <div class="in-butt">
+                                    <button class="in-butt">
                                         Download CV
-                                    </div>
-                                </a></div>
+                                    </button>
+                                </a></div> -->
 
                             <div class="butt">
                                 <a href="#proj-link">
-                                    <div class="in-butt">
+                                    <button class="in-butt">
                                         My Projects
-                                    </div>
+                                    </button>
                                 </a></div>
                         </div>
                     </div>
@@ -86,38 +84,40 @@
 
             <div class="skills">
 
-                <!-- LINK DO SKILLS -->
+                <!-- SKILLS LINK -->
                 <a name="skills-link"></a>
                 <div class="skill-box">
                     <h2>
-                        <div class='line'></div>SKILLS
+                        <div class='component-line'></div>SKILLS
                     </h2>
                     <h2 class="what">What Can I Do</h2>
                     <div class="frontend">
                         <ol class="frontend-list">
-                            <li><span>FRONTEND</span></li>
+                            <li>FRONTEND</li>
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>React</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>React (basic)</li>
                         </ol>
                     </div>
 
                     <div class="backend">
                         <ol class="backend-list">
-                            <li><span>BACKEND</span></li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>TypeScript</li>
+                            <li>BACKEND</li>
+                            <li>NodeJs (basic)</li>
+                            <li>Python (basic)</li>
                         </ol>
                     </div>
 
                     <div class="other">
 
                         <ol class="other-list">
-                            <li><span>OTHER</span></li>
-                            <li>AutoCAD</li>
-                            <li>Robot Structural Analysis</li>
+                            <li>OTHER</li>
+                            <li>Git/Github</li>
+                            <li>Figma</li>
                             <li>Photoshop</li>
+                            <li>AutoCAD</li>
                             <li>Lightroom</li>
                         </ol>
                     </div>
@@ -126,13 +126,13 @@
             </div>
 
             <div class="about">
-                <!-- LINK DO ABOUT -->
+                <!-- ABOUT LINK -->
                 <a name="about-link"></a>
                 <div class="about-box">
                     <div><img class='mypic' src="img/me1.jpg" alt="My Photo"></div>
                     <div>
                         <h2>
-                            <div class='line'></div>ABOUT ME
+                            <div class='component-line'></div>ABOUT ME
                         </h2>
                         <h2 class="semi-title">Who Am I</h2>
                         <p class="note-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officiis vel
@@ -161,7 +161,7 @@
 
 
             <div class="projects">
-                <!-- LINK DO PROJEKTÓW -->
+                <!-- PROJECTS LINK -->
                 <a name="proj-link"></a>
                 <div class="proj-box">
                     <div class="project13">
@@ -169,60 +169,51 @@
 
                         <div class='note-proj13'>
                             <h2>
-                                <div class='line'></div>PROJECT 1
+                                <div class='component-line'></div>PROJECT 1
                             </h2>
-                            <h2 class="semi-title">Project Name</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officiis
-                                vel
-                                id
-                                dolorum
-                                nobis numquam, obcaecati quos ad! Perferendis deleniti amet sequi, consequatur quis
-                                animi
-                                tempore.
-                                Excepturi praesentium perferendis tenetur.
-                                Ad voluptatem consequuntur quod ducimus ut nulla odit doloremque ex, earum, deleniti
-                                rerum
-                                quibusdam
-                                tempore veritatis aperiam iste, quis voluptate culpa eligendi tenetur numquam! Sapiente
-                                amet
-                                sed
-                                vitae
-                                minima exercitationem.
-
+                            <h2 class="semi-title">Personal Portfolio</h2>
+                            <p>First project I made with HTML and CSS, without JavaScript. Throughout this project I
+                                learned how to use CSS and make responsive website.
                             </p>
+                            <a href="#" target="_blank">
+                                <button name="submit" class="live-button" placeholder="Message">Live</button>
+                            </a>
+
+                            <a href="https://github.com/mchojak97/myportfolio-website" target="_blank">
+                                <button name="submit" class="live-button" placeholder="Message">Code</button>
+                            </a>
+
                         </div>
                         <div class="proj13-box">
-                            <img src="img/proj1.PNG" alt="Project 1">
+                            <img src="img/proj1.jpg" alt="Project 1">
                         </div>
 
                     </div>
                     <div class="project2">
                         <div class="proj2-box">
-                            <img src="img/proj2.PNG" alt="Project 2">
+                            <img src="img/proj2.jpg" alt="Project 2">
                         </div>
                         <div class='note-proj2'>
                             <h2>
-                                <div class='line'></div>PROJECT 2
+                                <div class='component-line'></div>PROJECT 2
                             </h2>
-                            <h2 class="semi-title">Project Name</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officiis
-                                vel
-                                id
-                                dolorum
-                                nobis numquam, obcaecati quos ad! Perferendis deleniti amet sequi, consequatur quis
-                                animi
-                                tempore.
-                                Excepturi praesentium perferendis tenetur.
-                                Ad voluptatem consequuntur quod ducimus ut nulla odit doloremque ex, earum, deleniti
-                                rerum
-                                quibusdam
-                                tempore veritatis aperiam iste, quis voluptate culpa eligendi tenetur numquam! Sapiente
-                                amet
-                                sed
-                                vitae
-                                minima exercitationem.
-
+                            <h2 class="semi-title">Restaurant search website </h2>
+                            <p>A Brave Squirrels Team first ever project. We created a Restaurants-API Single-page web
+                                app. All you have to do, is type in the name of city you are intrested in. You will be
+                                rewarded with a list of best restaurants in that city! Throughout this project I learned
+                                JavaScript and how to use API. Additionally, I learned how to work in IT team and work
+                                on Git branches.
                             </p>
+                            <a href="https://brave-squirrels.github.io/CodersCamp2020.Project.JavaScript.RestaurantsAPI/"
+                                target="_blank">
+                                <button name="submit" class="live-button" placeholder="Message">Live</button>
+                            </a>
+
+                            <a href="https://github.com/Brave-squirrels/CodersCamp2020.Project.JavaScript.RestaurantsAPI"
+                                target="_blank">
+                                <button name="submit" class="live-button" placeholder="Message">Code</button>
+                            </a>
+
                         </div>
 
 
@@ -233,30 +224,25 @@
 
                         <div class='note-proj13'>
                             <h2>
-                                <div class='line'></div>PROJECT 3
+                                <div class='component-line'></div>PROJECT 3
                             </h2>
-                            <h2 class="semi-title">Project Name</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officiis
-                                vel
-                                id
-                                dolorum
-                                nobis numquam, obcaecati quos ad! Perferendis deleniti amet sequi, consequatur quis
-                                animi
-                                tempore.
-                                Excepturi praesentium perferendis tenetur.
-                                Ad voluptatem consequuntur quod ducimus ut nulla odit doloremque ex, earum, deleniti
-                                rerum
-                                quibusdam
-                                tempore veritatis aperiam iste, quis voluptate culpa eligendi tenetur numquam! Sapiente
-                                amet
-                                sed
-                                vitae
-                                minima exercitationem.
-
+                            <h2 class="semi-title">Board game - Her</h2>
+                            <p>Second project of Brave Squirrels Team. This time we created browser version of a
+                                role-playing board game inspired by the game "Escape Tales". Throughout this project I
+                                learned practical use TypeScript.
                             </p>
+                            <a href="https://brave-squirrels.github.io/CodersCamp2020.Project.TypeScript.Her/"
+                                target="_blank">
+                                <button name="submit" class="live-button" placeholder="Message">Live</button>
+                            </a>
+
+                            <a href="https://github.com/Brave-squirrels/CodersCamp2020.Project.TypeScript.Her"
+                                target="_blank">
+                                <button name="submit" class="live-button" placeholder="Message">Code</button>
+                            </a>
                         </div>
                         <div class="proj13-box">
-                            <img src="img/proj3.PNG" alt="Project 3">
+                            <img src="img/proj3.jpg" alt="Project 3">
                         </div>
 
 
@@ -267,35 +253,38 @@
 
 
             <div class="contact">
-                <!-- LINK DO CONTACT -->
+                <!-- CONTACT LINK -->
                 <a name="contact-link"></a>
                 <div class="contact-box">
 
                     <div class="note-contact">
                         <h2>
-                            <div class="line"></div>CONTACT
+                            <div class="component-line"></div>CONTACT
                         </h2>
                         <h2 class="semi-title">Write To Me</h2>
-                        <p>Feel free to send me an email or message on LinkedIn. I am open to job offers and I will
+                        <p>Feel free to send me an email or message on LinkedIn. </p>
+                        <p>I am open to job offers and I will
                             answer as soon as possible.</p>
                         <br>
                         <br>
                         <h3>
-                            <div class="line"></div>
-                            <div>EMAIL: maciek@mail.com</div>
+                            <div class="component-line"></div>
+                            <p class="my-email">EMAIL: maciekch97@gmail.com</p>
                         </h3>
                         <br>
                         <h3>
-                            <div class="line"></div>
-                            <div>PHONE: 123 456 789</div>
+                            <!-- <div class="component-line"></div>
+                            <div>PHONE: 123 456 789</div> -->
                         </h3>
                     </div>
+
+                    <!-- ADD SECTION WHEN READY
 
                     <div class="form-box">
 
                         <form action="" method="get">
 
-                            <!-- KRATKA MAILA -->
+                           
                             <div class="mail">
                                 <input type="email" id="form-email" class="email-box" placeholder="Your email">
                             </div>
@@ -313,7 +302,9 @@
 
 
                         </form>
-                    </div>
+                    
+                </div>
+                -->
                 </div>
             </div>
 
