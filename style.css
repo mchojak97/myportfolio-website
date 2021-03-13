@@ -24,13 +24,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
 p {
     font-size: max(1rem, 12px);
     text-align: justify;
 }
-
-
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -50,7 +47,6 @@ body {
         "main   main    main"
         "foot   foot    foot";
     grid-template-columns: 1fr 1fr 1fr;
-    /* width: 100vw; */
 }
 
 .header {
@@ -512,7 +508,6 @@ h2 {
 }
 
 .footer {
-    /* width: 100vw; */
     font-weight: 400;
     font-size: 1.2rem;
     padding-top: 0.9vh;
@@ -562,45 +557,23 @@ h2 {
         padding-right: 3vw;
     }
 
-
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    main {
-        margin: 0;
-    }
-
     .header {
-        margin: 0;
         font-size: 1.8rem;
         height: 6vw;
         grid-template-columns: 1fr;
         align-content: center;
         justify-items: space-around;
-
     }
 
     .home {
-        margin: 0;
-        padding: 0;
         height: 100vh;
-        width: 100%;
-        display: flex;
-
     }
 
     .leftside {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        height: 100vh;
         width: 100vw;
         justify-content: center;
         font-size: 2rem;
     }
-
 
     .hello span {
         color: #ca8d4c;
@@ -618,16 +591,13 @@ h2 {
         border: 0.8vw var(--icons-color) solid;
     }
 
-
     .helloworld-box h2 {
         font-size: 5.5rem;
     }
 
 
     .skills .skill-box {
-        margin-left: 15vw;
-        margin-top: 6vw;
-        margin-bottom: 7vh;
+        margin: 6vw 0 7vh 15vw;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -651,8 +621,6 @@ h2 {
     .skills li {
         font-size: 1.8rem;
     }
-
-
 
     .about {
         flex-direction: column;
@@ -732,5 +700,4 @@ h2 {
     .footer h3 {
         font-size: 1.2rem;
     }
-
 }
